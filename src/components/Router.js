@@ -1,14 +1,16 @@
 import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Auth from "../routes/Auth";
-import Home from "../routes/home";
+import Home from "../routes/Home";
 import Navigation from "./Navigation";
 import Profile from "../routes/Profile";
+import { GlobalStyle } from "../GlobalStyles";
 
 const AppRouter = ({ refreshUser, isLoggedIn, userObj }) => {
   return (
     <Router>
-      {isLoggedIn && <Navigation userObj={userObj} />}
+      <GlobalStyle />
+      {isLoggedIn ? <Navigation userObj={userObj} /> : <Navigation />}
       <Switch>
         {isLoggedIn ? (
           <>

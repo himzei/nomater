@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AppRouter from "./Router";
 import { authService } from "fBase";
+import Tail from "../routes/Tail";
 
 function App() {
   const [init, setInit] = useState(false);
@@ -13,6 +14,8 @@ function App() {
           uid: user.uid,
           updateProfile: (args) => user.updateProfile(args),
         });
+      } else {
+        setUserObj(null);
       }
       setInit(true);
     });
@@ -36,7 +39,7 @@ function App() {
       ) : (
         "Initializing..."
       )}
-      <footer>&copy; Nomter</footer>
+      <Tail />
     </>
   );
 }

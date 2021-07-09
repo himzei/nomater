@@ -1,41 +1,32 @@
 import { authService } from "fBase";
-import React, { useState } from "react";
+import React from "react";
 import { firebaseInstance } from "../fBase";
+import AuthForm from "../components/AuthForm";
+import styled from "styled-components";
+
+const AuthContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Button1 = styled.button`
+  padding: 10px 0px;
+  font-size: 18px;
+  width: 425px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #db6400;
+  border: none;
+  color: white;
+`;
+
+const Button2 = styled(Button1)`
+  background-color: #59886b;
+`;
 
 const Auth = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [newAccount, setNewAccount] = useState(true);
-  const [error, setError] = useState("");
-  const onChange = (event) => {
-    const {
-      target: { name, value },
-    } = event;
-    if (name === "email") {
-      setEmail(value);
-    } else if (name === "password") {
-      setPassword(value);
-    }
-  };
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    try {
-      let data;
-      if (newAccount) {
-        data = await authService.createUserWithEmailAndPassword(
-          email,
-          password
-        );
-      } else {
-        data = await authService.signInWithEmailAndPassword(email, password);
-      }
-      console.log(data);
-    } catch (error) {
-      setError(error.message);
-    }
-  };
-
-  const toggleAccount = () => setNewAccount((prev) => !prev);
   const onSocialClick = async (event) => {
     const {
       target: { name },
@@ -51,40 +42,15 @@ const Auth = () => {
   };
   return (
     <div>
-      <form onSubmit={onSubmit}>
-        <input
-          type="text"
-          placeholder="email"
-          value={email}
-          name="email"
-          required
-          onChange={onChange}
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="password"
-          value={password}
-          required
-          onChange={onChange}
-        />
-        <input
-          type="submit"
-          value={newAccount ? "Creaate Account" : "Signin"}
-        />
-        {error}
-      </form>
-      <span onClick={toggleAccount}>
-        {newAccount ? "Signin" : "Create Account"}
-      </span>
-      <div>
-        <button onClick={onSocialClick} name="google">
-          Continue with Goolge
-        </button>
-        <button onClick={onSocialClick} name="github">
-          Continue with Github
-        </button>
-      </div>
+      <AuthForm />
+      <AuthContainer>
+        <Button1 onClick={onSocialClick} name="google">
+          Google로 로그인 및 회원가입
+        </Button1>
+        <Button2 onClick={onSocialClick} name="github">
+          Github로 로그인 및 회원가입
+        </Button2>
+      </AuthContainer>
     </div>
   );
 };
