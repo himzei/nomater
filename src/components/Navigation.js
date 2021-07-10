@@ -42,7 +42,7 @@ const Navigation = ({ userObj }) => (
       </LogoContainer>
       <ItemContainer>
         <ItemMenu>
-          <Link to="/profile">화상영어소개</Link>
+          <Link to="/introduce">화상영어소개</Link>
         </ItemMenu>
         <ItemMenu>
           <Link to="/profile">학습안내</Link>
