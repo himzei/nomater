@@ -1,6 +1,5 @@
-import { authService } from "fBase";
+import { authService, firebaseInstance } from "../fBase";
 import React from "react";
-import { firebaseInstance } from "../fBase";
 import AuthForm from "../components/AuthForm";
 import styled from "styled-components";
 

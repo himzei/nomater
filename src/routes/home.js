@@ -1,5 +1,5 @@
-import Tweet from "components/Tweet";
-import TweetFactory from "components/TweetFactory";
+import Tweet from "../components/Tweet";
+import TweetFactory from "../components/TweetFactory";
 import React, { useState, useEffect } from "react";
 import { dbService } from "../fBase";
 import styled from "styled-components";

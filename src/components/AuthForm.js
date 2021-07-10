@@ -1,4 +1,4 @@
-import { authService } from "fBase";
+import { authService } from "../fBase";
 import React, { useState } from "react";
 import styled from "styled-components";
 
