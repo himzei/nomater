@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/nomater/static/js/main.6c666536.chunk.js",
-    "main.js.map": "/nomater/static/js/main.6c666536.chunk.js.map",
+    "main.js": "/nomater/static/js/main.d49dd851.chunk.js",
+    "main.js.map": "/nomater/static/js/main.d49dd851.chunk.js.map",
     "runtime-main.js": "/nomater/static/js/runtime-main.92b31fcf.js",
     "runtime-main.js.map": "/nomater/static/js/runtime-main.92b31fcf.js.map",
-    "static/js/2.41b4100a.chunk.js": "/nomater/static/js/2.41b4100a.chunk.js",
-    "static/js/2.41b4100a.chunk.js.map": "/nomater/static/js/2.41b4100a.chunk.js.map",
+    "static/js/2.6bef024f.chunk.js": "/nomater/static/js/2.6bef024f.chunk.js",
+    "static/js/2.6bef024f.chunk.js.map": "/nomater/static/js/2.6bef024f.chunk.js.map",
     "index.html": "/nomater/index.html",
-    "static/js/2.41b4100a.chunk.js.LICENSE.txt": "/nomater/static/js/2.41b4100a.chunk.js.LICENSE.txt"
+    "static/js/2.6bef024f.chunk.js.LICENSE.txt": "/nomater/static/js/2.6bef024f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.92b31fcf.js",
-    "static/js/2.41b4100a.chunk.js",
-    "static/js/main.6c666536.chunk.js"
+    "static/js/2.6bef024f.chunk.js",
+    "static/js/main.d49dd851.chunk.js"
   ]
 }
