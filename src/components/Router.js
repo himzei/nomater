@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Auth from "routes/Auth";
+import Auth from "../routes/Auth";
 import Home from "../routes/Home";
-import Navigation from "components/Navigation";
-import Profile from "routes/Profile";
-import { GlobalStyle } from "GlobalStyles";
+import Navigation from "../components/Navigation";
+import Profile from "../routes/Profile";
+import { GlobalStyle } from "../GlobalStyles";
 import Introduce from "../routes/Introduce";
 
 const AppRouter = ({ refreshUser, isLoggedIn, userObj }) => {
