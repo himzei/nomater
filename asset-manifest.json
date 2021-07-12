@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/nomater/static/js/main.d49dd851.chunk.js",
-    "main.js.map": "/nomater/static/js/main.d49dd851.chunk.js.map",
+    "main.js": "/nomater/static/js/main.fd9ba9c8.chunk.js",
+    "main.js.map": "/nomater/static/js/main.fd9ba9c8.chunk.js.map",
     "runtime-main.js": "/nomater/static/js/runtime-main.92b31fcf.js",
     "runtime-main.js.map": "/nomater/static/js/runtime-main.92b31fcf.js.map",
     "static/js/2.6bef024f.chunk.js": "/nomater/static/js/2.6bef024f.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.92b31fcf.js",
     "static/js/2.6bef024f.chunk.js",
-    "static/js/main.d49dd851.chunk.js"
+    "static/js/main.fd9ba9c8.chunk.js"
   ]
 }
